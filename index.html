@@ -1,18 +1,203 @@
-Rezgar Oremari - روابطي
-    
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pretty Center</title>
+    <!-- مكتبة الأيقونات Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* إعدادات الصفحة والخلفية الوردية */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #fdecf2; /* لون الخلفية الوردي الفاتح */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
 
+        /* الحاوية الرئيسية (البطاقة البيضاء) */
+        .card {
+            background-color: #ffffff;
+            width: 100%;
+            max-width: 380px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            overflow: hidden;
+            margin: 20px;
+            text-align: center;
+            padding-bottom: 30px;
+        }
 
+        /* صورة الغلاف العلوية */
+        .header-image {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            /* أضف رابط صورة المبنى هنا لاحقاً */
+            background-color: #ddd; 
+            background-image: url('https://via.placeholder.com/400x200?text=Pretty+Center+Building');
+            background-size: cover;
+            background-position: center;
+        }
 
-    
-        
-        
-        
-        Rezgar Oremari
-        مطور ويب | مهتم بالتقنية والبرمجة. مرحباً بك في صفحتي الشخصية!
+        /* العناوين والنصوص */
+        .title {
+            color: #d81b60; /* اللون الوردي الغامق للاسم */
+            font-size: 24px;
+            font-weight: 800;
+            margin: 15px 0 5px;
+        }
 
+        .subtitle {
+            color: #333;
+            font-size: 14px;
+            font-weight: 600;
+            margin: 0 0 10px;
+        }
+
+        .description {
+            color: #666;
+            font-size: 12px;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        /* حاوية الأزرار */
+        .links-container {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            padding: 0 25px;
+            margin-bottom: 30px;
+        }
+
+        /* التصميم الأساسي للزر */
+        .link-btn {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            text-decoration: none;
+            padding: 12px 20px;
+            border-radius: 10px;
+            font-size: 14px;
+            font-weight: 600;
+            transition: transform 0.2s ease;
+        }
+
+        .link-btn:hover {
+            transform: scale(1.02);
+        }
+
+        .btn-content {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        /* ألوان الأزرار المخصصة */
+        .btn-insta { background-color: #e1306c; color: white; }
+        .btn-tiktok { background-color: #000000; color: white; }
+        .btn-snap { background-color: #fffc00; color: black; }
+        .btn-wa { background-color: #25d366; color: white; }
+        .btn-call { background-color: #00a8ff; color: white; }
+        .btn-loc { background-color: #4a69bd; color: white; }
+
+        /* معلومات أسفل الصفحة (الموقع والوقت) */
+        .footer-info {
+            font-size: 12px;
+            color: #333;
+        }
+
+        .footer-info i {
+            color: #d81b60;
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+
+        .info-block {
+            margin-bottom: 15px;
+        }
         
-            
-            حسابي على GitHub
-            حساب Twitter
-            LinkedIn
-            مشاريعي
+        .info-title {
+            font-weight: bold;
+            margin: 5px 0;
+            font-size: 13px;
+        }
+
+        .info-text {
+            color: #555;
+            margin: 2px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <!-- صورة الغلاف -->
+        <div class="header-image" id="coverImage"></div>
+
+        <!-- النصوص -->
+        <h1 class="title">Pretty Center</h1>
+        <h2 class="subtitle">Swim & Gym</h2>
+        <div class="description">
+            Everything you need for swimming & fitness<br>
+            كه ل و په لين مه له ڤانى و وەرزشى
+        </div>
+
+        <!-- الأزرار -->
+        <div class="links-container">
+            <a href="#" class="link-btn btn-insta">
+                <div class="btn-content"><i class="fab fa-instagram"></i> Instagram</div>
+                <i class="fas fa-chevron-right"></i>
+            </a>
+
+            <a href="#" class="link-btn btn-tiktok">
+                <div class="btn-content"><i class="fab fa-tiktok"></i> TikTok</div>
+                <i class="fas fa-chevron-right"></i>
+            </a>
+
+            <a href="#" class="link-btn btn-snap">
+                <div class="btn-content"><i class="fab fa-snapchat-ghost"></i> Snapchat</div>
+                <i class="fas fa-chevron-right"></i>
+            </a>
+
+            <a href="#" class="link-btn btn-wa">
+                <div class="btn-content"><i class="fab fa-whatsapp"></i> WhatsApp</div>
+                <i class="fas fa-chevron-right"></i>
+            </a>
+
+            <a href="#" class="link-btn btn-call">
+                <div class="btn-content"><i class="fas fa-phone-alt"></i> Call Now</div>
+                <i class="fas fa-chevron-right"></i>
+            </a>
+
+            <a href="#" class="link-btn btn-loc">
+                <div class="btn-content"><i class="fas fa-map-marker-alt"></i> Store Location</div>
+                <i class="fas fa-chevron-right"></i>
+            </a>
+        </div>
+
+        <!-- معلومات الموقع والوقت -->
+        <div class="footer-info">
+            <div class="info-block">
+                <i class="fas fa-map-marker-alt"></i>
+                <div class="info-title">Location</div>
+                <div class="info-text">Duhok - Iraq</div>
+            </div>
+
+            <div class="info-block">
+                <i class="far fa-clock"></i>
+                <div class="info-title">Opening Hours</div>
+                <div class="info-text">Saturday - Thursday</div>
+                <div class="info-text" style="font-weight: bold; color: #000;">5:00 AM - 8:00 PM</div>
+                <div class="info-text">Friday: Closed</div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
