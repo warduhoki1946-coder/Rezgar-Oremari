@@ -1,0 +1,593 @@
+/* ===================================
+   PRETTY CENTER V2
+=================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Poppins','Cairo',sans-serif;
+
+    background-image:
+        linear-gradient(rgba(255,240,247,.78), rgba(255,240,247,.78)),
+        url("cover.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+    background-repeat:no-repeat;
+
+    background-attachment:fixed;
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    padding:35px 15px;
+
+    color:#333;
+
+    position:relative;
+
+}
+
+/* ===========================
+   Main Card
+=========================== */
+
+.container{
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+.card{
+
+    width:100%;
+
+    max-width:460px;
+
+    background:rgba(255,255,255,.92);
+
+    backdrop-filter:blur(18px);
+
+    -webkit-backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.45);
+
+    border-radius:30px;
+
+    overflow:hidden;
+
+    box-shadow:
+        0 20px 60px rgba(0,0,0,.18);
+
+    animation:fadeUp .8s ease;
+
+}
+
+/* ===========================
+   Cover Image
+=========================== */
+
+.hero{
+    height:360px;
+    overflow:hidden;
+}
+
+.cover{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position:center;
+}
+
+.hero:hover .cover{
+
+    transform:scale(1.05);
+
+}
+
+.overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:linear-gradient(
+        to top,
+        rgba(0,0,0,.45),
+        rgba(0,0,0,.05),
+        transparent
+    );
+
+}
+
+/* ===========================
+   Content
+=========================== */
+
+.content{
+
+    padding:30px 25px 35px;
+
+}
+
+h1{
+
+    text-align:center;
+
+    font-size:46px;
+
+    font-weight:800;
+
+    color:#e91e63;
+
+    margin-top:5px;
+
+}
+
+h2{
+
+    text-align:center;
+
+    font-size:26px;
+
+    color:#555;
+
+    font-weight:600;
+
+    margin-top:8px;
+
+}
+
+.subtitle{
+
+    margin-top:15px;
+
+    text-align:center;
+
+    color:#666;
+
+    font-size:15px;
+
+    line-height:1.8;
+
+}
+
+.subtitle-ar{
+
+    margin-top:8px;
+
+    text-align:center;
+
+    direction:rtl;
+
+    color:#777;
+
+    font-size:15px;
+
+}/* ===========================
+   Buttons
+=========================== */
+
+.buttons{
+
+    margin-top:30px;
+
+}
+
+.btn{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    text-decoration:none;
+
+    color:#fff;
+
+    border:none;
+
+    border-radius:18px;
+
+    padding:20px 22px;
+
+    margin-bottom:16px;
+
+    font-weight:700;
+
+    transition:.35s;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+
+}
+
+.btn:hover{
+
+    transform:translateY(-4px) scale(1.02);
+
+    box-shadow:0 18px 35px rgba(0,0,0,.22);
+
+}
+.btn .left{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+}
+.btn i{
+
+    font-size:24px;
+
+}
+
+.btn span{
+
+    font-size:18px;
+
+    font-weight:700;
+
+}
+
+.btn:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 15px 35px rgba(0,0,0,.12);
+
+   .instagram{
+
+    background:linear-gradient(90deg,#d62976,#ff6b57);
+
+}
+
+.tiktok{
+
+    background:#111;
+
+}
+
+.snapchat{
+
+    background:#FFD600;
+
+    color:#111;
+
+}
+
+.whatsapp{
+
+    background:#25D366;
+
+}
+
+.phone{
+
+    background:#1E88E5;
+
+}
+
+.location{
+
+    background:#356AE6;
+
+}
+}/* ===========================
+   Information Section
+=========================== */
+
+.info{
+
+    margin-top:35px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+.info-box{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:18px;
+
+    background:#fafafa;
+
+    border:1px solid #ececec;
+
+    border-radius:18px;
+
+    padding:18px;
+
+    transition:.3s;
+
+}
+
+.info-box:hover{
+
+    background:#fff;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+    transform:translateY(-2px);
+
+}
+
+.info-box i{
+
+    font-size:24px;
+
+    color:#e91e63;
+
+    margin-top:4px;
+
+    min-width:28px;
+
+    text-align:center;
+
+}
+
+.info-box h3{
+
+    margin:0 0 8px;
+
+    font-size:18px;
+
+    font-weight:700;
+
+    color:#222;
+
+}
+
+.info-box p{
+
+    margin:4px 0;
+
+    color:#666;
+
+    line-height:1.6;
+
+}
+
+.info-box strong{
+
+    display:block;
+
+    margin-top:6px;
+
+    font-size:17px;
+
+    color:#222;
+
+}
+
+.closed{
+
+    margin-top:10px;
+
+    color:#d32f2f !important;
+
+    font-weight:700;
+
+}
+
+/* ===========================
+   Footer Space
+=========================== */
+
+.card{
+
+    margin-bottom:25px;
+
+}/* ===========================
+   Animations
+=========================== */
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(30px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media (max-width:480px){
+
+    body{
+
+        padding:20px 12px;
+
+    }
+
+    .card{
+
+        border-radius:24px;
+
+    }
+
+    .hero{
+
+        height:240px;
+
+    }
+
+    .content{
+
+        padding:25px 18px 30px;
+
+    }
+
+    h1{
+
+        font-size:30px;
+
+    }
+
+    h2{
+
+        font-size:18px;
+
+    }
+
+    .subtitle{
+
+        font-size:14px;
+
+    }
+
+    .subtitle-ar{
+
+        font-size:14px;
+
+    }
+
+    .btn{
+
+        padding:16px;
+
+    }
+
+    .btn span{
+
+        font-size:16px;
+
+    }
+
+    .btn i{
+
+        font-size:20px;
+
+    }
+
+    .info-box{
+
+        padding:16px;
+
+    }
+
+    .info-box h3{
+
+        font-size:17px;
+
+    }
+
+}
+
+/* ===========================
+   Final Touch
+=========================== */
+
+body::before{
+
+    content:"";
+
+    position:fixed;
+
+    top:-120px;
+
+    right:-120px;
+
+    width:260px;
+
+    height:260px;
+
+    border-radius:50%;
+
+    background:rgba(255,182,193,.25);
+
+    filter:blur(40px);
+
+    z-index:-1;
+
+}
+
+body::after{
+
+    content:"";
+
+    position:fixed;
+
+    bottom:-100px;
+
+    left:-100px;
+
+    width:220px;
+
+    height:220px;
+
+    border-radius:50%;
+
+    background:rgba(255,105,180,.15);
+
+    filter:blur(35px);
+
+    z-index:-1;
+
+}
+
+.btn{
+
+    cursor:pointer;
+
+}
+
+.hero{
+
+    border-bottom:1px solid #f2f2f2;
+
+}
+@media (max-width:768px){
+
+    body{
+
+        background-attachment:scroll;
+
+        background-position:center center;
+
+        background-size:cover;
+
+    }
+
+}
